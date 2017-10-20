@@ -1,4 +1,5 @@
 # 微图床 V-Bed
+> [https://inn-studio.com/vbed](https://inn-studio.com/vbed)
 
 >这是一款来自 INN-STUDIO.com 的 web 应用，能快捷地使用发表一篇带图分享微博并获取其图片地址，方便博客、论坛贴图。
 
