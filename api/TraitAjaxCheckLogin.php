@@ -4,11 +4,11 @@ namespace InnStudio\Vbed\Api;
 
 trait TraitAjaxCheckLogin
 {
-    protected function ajaxCheckLogin()
+    private function ajaxCheckLogin(): void
     {
     }
 
-    protected function isLoggedIn()
+    private function isLoggedIn(): bool
     {
     }
 }

@@ -1,0 +1,92 @@
+{
+    "V-Bed": {
+        "zh-CN": "微图床"
+    },
+    "Loading, please wait...": {
+        "zh-CN": "加载中，请稍等……"
+    },
+    "Uploading...": {
+        "zh-CN": "上传中……"
+    },
+    "Copy": {
+        "zh-CN": "复制"
+    },
+    "Select / Drag and drop / Paste": {
+        "zh-CN": "选择 / 拖放 / 粘贴图片"
+    },
+    "Upload error": {
+        "zh-CN": "上传错误"
+    },
+    "Drag and drop pictures here": {
+        "zh-CN": "拖放图片到此处"
+    },
+    "Are you sure delete this item?": {
+        "zh-CN": "您确定要删除此图片吗？"
+    },
+    "Delete": {
+        "zh-CN": "删"
+    },
+    "Top": {
+        "zh-CN": "顶"
+    },
+    "Bottom": {
+        "zh-CN": "底"
+    },
+    "Up": {
+        "zh-CN": "上"
+    },
+    "Down": {
+        "zh-CN": "下"
+    },
+    "Are you sure Clean all?": {
+        "zh-CN": "您确定需要清空当前列表吗？"
+    },
+    "Copy (%d)": {
+        "zh-CN": "复制 (%d)"
+    },
+    "Reverse": {
+        "zh-CN": "倒序全部"
+    },
+    "Clean": {
+        "zh-CN": "清空列表"
+    },
+    "Page Breaks": {
+        "zh-CN": "分页符"
+    },
+    "Copy URL only": {
+        "zh-CN": "仅复制地址"
+    },
+    "Copy image HTML": {
+        "zh-CN": "复制图片 HTML"
+    },
+    "Copy image HTML with link": {
+        "zh-CN": "复制包含链接的图片 HTML"
+    },
+    "Copy Markdown image": {
+        "zh-CN": "复制 MD 图片"
+    },
+    "Copy Markdown image with link": {
+        "zh-CN": "复制包含链接的 MD 图片"
+    },
+    "No page breaks": {
+        "zh-CN": "不使用分页"
+    },
+    "%d image(s) per page": {
+        "zh-CN": "每页 %d 张图"
+    },
+    "V-Bed by INN STUDIO": {
+        "zh-CN": "微图床 V-Bed by INN STUDIO"
+    },
+    "Welcome, please sign Sina Weibo to authorize V-Bed": {
+        "zh-CN": "欢迎使用，请登录微博授权“微图床”"
+    },
+    "Has been authorized and Click to refresh": {
+        "zh-CN": "已经授权，请点击此处刷新"
+    },
+    "Not authorized, please click here": {
+        "zh-CN": "尚未授权，请点击此处授权"
+    },
+    "Error, click to re-upload (%s)": {
+        "zh-CN": "错误，点击此处重新上传"
+    }
+}

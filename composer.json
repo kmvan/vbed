@@ -1,0 +1,19 @@
+{
+    "name": "kmvan/vbed",
+    "description": "V-Bed.",
+    "authors": [
+        {
+            "name": "Km.Van",
+            "email": "kmvan.com@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InnStudio\\Vbed\\Api\\": "api/"
+        }
+    }
+}

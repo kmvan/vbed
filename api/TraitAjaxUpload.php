@@ -4,11 +4,11 @@ namespace InnStudio\Vbed\Api;
 
 trait TraitAjaxUpload
 {
-    protected function ajaxUpload()
+    private function ajaxUpload(): void
     {
         $file = $this->ajaxCheckFile();
         $res  = $this->postFile(
-            API_URL . '?action=sendImg&csrf=' . Helper::createCsrf(),
+            API_URL . '?action=sendImg&csrf=' . Helper::genCsrf(),
             [
                 'token'    => \base64_encode($this->getTokenFromCookie()),
                 'img'      => new \CurlFile($file['tmp_name'], $file['type']),
@@ -18,7 +18,7 @@ trait TraitAjaxUpload
 
         $code = $res['code'] ?? false;
 
-        if ($code === 0) {
+        if (0 === $code) {
             Helper::dieJson([
                 'data' => [
                     'filename' => $res['data']['filename'],
@@ -34,9 +34,9 @@ trait TraitAjaxUpload
         ]);
     }
 
-    private function ajaxCheckFile()
+    private function ajaxCheckFile(): array
     {
-        $file = $_FILES['file'] ?? false;
+        $file = $_FILES['file'] ?? [];
 
         if ( ! $file) {
             Helper::dieJson([
@@ -60,8 +60,6 @@ trait TraitAjaxUpload
         $res = \curl_exec($curl);
         \curl_close($curl);
 
-        $json = \json_decode($res, true);
-
-        return $json ?: $res;
+        return \json_decode($res, true) ?: $res;
     }
 }

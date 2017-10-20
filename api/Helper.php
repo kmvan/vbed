@@ -20,7 +20,7 @@ class Helper
     {
         $csrf = $csrf ?: \filter_input(INPUT_GET, 'csrf', FILTER_SANITIZE_STRING);
 
-        if ( ! self::checkCsrf($csrf)) {
+        if ( ! self::isValidCsrf($csrf)) {
             self::dieJson([
                 'code' => -1,
                 'msg'  => 'Sorry, operation timeout, please refresh page and retry.',
@@ -45,7 +45,7 @@ class Helper
         return false;
     }
 
-    public static function checkCsrf(string $csrf): bool
+    public static function isValidCsrf(string $csrf): bool
     {
         $csrf = \filter_var($csrf, FILTER_SANITIZE_STRING);
 
@@ -58,7 +58,7 @@ class Helper
         return $csrf === $_SESSION['csrf'];
     }
 
-    public static function createCsrf(): string
+    public static function genCsrf(): string
     {
         self::SessionStart();
         $csrf = $_SESSION['csrf'] ?? '';

@@ -4,7 +4,7 @@ namespace InnStudio\Vbed\Api;
 
 trait TraitAjaxSetOauth
 {
-    private function ajaxSetOauth()
+    private function ajaxSetOauth(): void
     {
         $data = \filter_input(INPUT_GET, 'data', FILTER_SANITIZE_STRING);
         $data = \json_decode(\base64_decode($data), true);
@@ -25,8 +25,8 @@ trait TraitAjaxSetOauth
         </head>
         <body>
             <div style="text-align: center">
-                <h1 style="color:green">授权成功！3 秒后自动跳转……</h1>
-                <button onClick="location.href='<?= URL; ?>';">&lt; 返回到“微图床”</button>
+                <h1 style="color: green">授权成功！3 秒后自动跳转……</h1>
+                <button onClick="location.href='<?= URL; ?>';">&lt; 返回到“<?= APP_NAME; ?>”</button>
             </div>
         </body>
         </html>

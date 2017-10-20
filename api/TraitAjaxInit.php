@@ -4,12 +4,12 @@ namespace InnStudio\Vbed\Api;
 
 trait TraitAjaxInit
 {
-    public function ajaxInit(): void
+    private function ajaxInit(): void
     {
         Helper::SessionStart();
         Helper::dieJson([
             'data' => [
-                'csrf'       => Helper::createCsrf(),
+                'csrf'       => Helper::genCsrf(),
                 'isLoggedIn' => (bool) $this->getTokenFromCookie(),
                 'oauthUrl'   => $this->getOauthUrl(),
             ],
@@ -19,7 +19,7 @@ trait TraitAjaxInit
     private function getOauthUrl()
     {
         $args = \http_build_query([
-            'csrf'             => Helper::createCsrf(),
+            'csrf'             => Helper::genCsrf(),
             'action'           => 'redirectToGetOaCode',
             'redirectToAppUrl' => URL . '/api/?action=setOauth',
 

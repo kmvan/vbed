@@ -1,0 +1,94 @@
+$color-initial: #fff !default;
+$color-primary: #E66482 !default;
+$color-secondary: #AF415B !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+
+@import "~milligram/src/Base";
+@import "~milligram/src/Button";
+@import "~milligram/src/Form";
+@import "~milligram/src/Link";
+@import "~milligram/src/Grid";
+@import "~milligram/src/Typography";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .3s;
+}
+
+body {
+  padding: .5rem;
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei','Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.button,
+button,
+dd,
+dt,
+li,
+fieldset, input, select, textarea {
+  margin-bottom: .5rem;
+}
+
+.button,
+button {
+  padding-left: 0;
+  padding-right: 0;
+
+  &.button-outline {
+    &:hover {
+      background-color: rgba($color-primary, 0.1);
+      border-color: $color-secondary;
+    }
+  }
+}
+
+.widefat {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1rem;
+}
+
+.btn-group {
+  display: flex;
+
+  & > * {
+    flex-grow: 1;
+    width: 100%;
+    margin-right: .5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+textarea {
+  min-height: auto;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: #fff;
+}
+
+select {
+  cursor: pointer;
+
+  &:focus {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#{$color-primary}" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+  }
+}
+
+@import "./scrollbar";
+@import "./container";
+@import "./footer";

@@ -21,13 +21,12 @@ class ComposerStaticInitf34fe79145409f781c72c16e197b3922
     );
 
     public static $classMap = array (
+        'InnStudio\\Vbed\\Api\\Entry' => __DIR__ . '/../..' . '/api/Entry.php',
         'InnStudio\\Vbed\\Api\\Helper' => __DIR__ . '/../..' . '/api/Helper.php',
         'InnStudio\\Vbed\\Api\\TraitAjaxCheckLogin' => __DIR__ . '/../..' . '/api/TraitAjaxCheckLogin.php',
         'InnStudio\\Vbed\\Api\\TraitAjaxInit' => __DIR__ . '/../..' . '/api/TraitAjaxInit.php',
         'InnStudio\\Vbed\\Api\\TraitAjaxSetOauth' => __DIR__ . '/../..' . '/api/TraitAjaxSetOauth.php',
         'InnStudio\\Vbed\\Api\\TraitAjaxUpload' => __DIR__ . '/../..' . '/api/TraitAjaxUpload.php',
-        'InnStudio\\Vbed\\Api\\Vbed' => __DIR__ . '/../..' . '/api/index.php',
-        'InnStudio\\Vbed\\Api\\WeiboOpenApi' => __DIR__ . '/../..' . '/api/SinaOauth2.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

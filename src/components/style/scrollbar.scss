@@ -1,0 +1,26 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgba($color-primary, 0.1);
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($color-primary, 0.5);
+  border-radius: 10px;
+
+  &:hover {
+    background: rgba($color-primary, 0.6);
+  }
+
+  &:active {
+    background: rgba($color-primary, 0.7);
+  }
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba($color-primary, 0.2);
+}
