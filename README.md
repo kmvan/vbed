@@ -1,3 +1,5 @@
+[![V-Bed by INN STUDIO](https://wx3.sinaimg.cn/large/686ee05dly1fkp53buk3nj218s0eydir.jpg)](https://wx3.sinaimg.cn/large/686ee05dly1fkp53buk3nj218s0eydir.jpg)
+
 # 微图床 V-Bed
 > [https://inn-studio.com/vbed](https://inn-studio.com/vbed)
 
