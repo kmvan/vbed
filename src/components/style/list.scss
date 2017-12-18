@@ -1,15 +1,17 @@
-$img-size: 130px;
+@import './config';
+
+$img-size: 122px;
 
 .list-container {
-  max-height: calc(100vh - 150px);
   overflow-y: auto;
+  padding-bottom: 3rem;
 
   .item {
     display: flex;
     align-items: flex-start;
 
     .btn-reupload {
-      height: calc(100% - .5rem);
+      height: calc(100% - $grid-gutter);
     }
 
     .preview {
@@ -17,8 +19,8 @@ $img-size: 130px;
       width: $img-size - 1px;
       flex-grow: 0;
       height: $img-size - 1px;
-      padding-right: .5rem;
-      padding-bottom: .5rem;
+      padding-right: $grid-gutter;
+      padding-bottom: $grid-gutter;
       text-align: center;
 
       .fa {
@@ -47,7 +49,7 @@ $img-size: 130px;
 
       & > * {
         width: 100%;
-        margin-right: .5rem;
+        margin-right: $grid-gutter;
 
         &:last-child {
           margin-right: 0;

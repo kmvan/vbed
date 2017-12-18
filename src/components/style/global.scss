@@ -5,6 +5,7 @@ $color-tertiary: #f4f5f6 !default;
 $color-quaternary: #d1d1d1 !default;
 $color-quinary: #e1e1e1 !default;
 
+@import "./config";
 @import "~milligram/src/Base";
 @import "~milligram/src/Button";
 @import "~milligram/src/Form";
@@ -20,7 +21,7 @@ $color-quinary: #e1e1e1 !default;
 }
 
 body {
-  padding: .5rem;
+  padding: $grid-gutter;
   font-family: 'Microsoft YaHei UI', 'Microsoft YaHei','Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -30,7 +31,7 @@ dd,
 dt,
 li,
 fieldset, input, select, textarea {
-  margin-bottom: .5rem;
+  margin-bottom: $grid-gutter;
 }
 
 .button,
@@ -55,7 +56,30 @@ h2,
 h3,
 h4,
 p {
-  margin-bottom: 1rem;
+  margin-bottom: $grid-gutter;
+}
+
+@media (min-width: 40rem) {
+  .row {
+    flex-direction: row;
+    margin-left: -$grid-gutter / 2;
+    width: calc(100% + #{$grid-gutter});
+
+    .column {
+      margin-bottom: inherit;
+      padding: 0 ($grid-gutter / 2);
+    }
+  }
+}
+
+.button {
+  .tx {
+    display: none;
+
+    @media (min-width: 40rem) {
+      display: inline;
+    }
+  }
 }
 
 .btn-group {
@@ -64,7 +88,7 @@ p {
   & > * {
     flex-grow: 1;
     width: 100%;
-    margin-right: .5rem;
+    margin-right: $grid-gutter;
 
     &:last-child {
       margin-right: 0;

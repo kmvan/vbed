@@ -31,7 +31,7 @@ class ListContainer extends Component {
                 value={file.isUploading ? _('Uploading...') : this.storeFiles.getTpl(file)}
                 onChange={() => false}
                 spellCheck={false}
-                autoComplete={false}
+                autoComplete="false"
             />
         )
     }
@@ -79,8 +79,11 @@ class ListContainer extends Component {
                 className="button copy"
                 onClick={() => this.copy(file, i)}
             >
-                <i className="fa fa-files-o" />{' '}{_('Copy')}
-                {file.copyCount ? `+${file.copyCount}` : ''}
+                <i className="fa fa-files-o" />
+                <span className="tx">
+                    {` ${_('Copy')}`}
+                    {file.copyCount ? ` +${file.copyCount}` : ''}
+                </span>
             </button>
         )
     }
@@ -167,7 +170,10 @@ class ListContainer extends Component {
                         onClick={btn.callback}
                         className="button button-outline"
                     >
-                        <i className={`fa fa-${btn.icon}`} />{' '}{btn.tx}
+                        <i className={`fa fa-${btn.icon}`} />
+                        <span className="tx">
+                            {` ${btn.tx}`}
+                        </span>
                     </button>
                 ))}
             </div>
