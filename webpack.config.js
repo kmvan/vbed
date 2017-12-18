@@ -230,6 +230,7 @@ let config = {
     devtool: __DEV__ ? 'source-map' : 'hidden',
     watchOptions: {
         poll: __DEV__,
+        ignored: /node_modules/,
     },
 }
 

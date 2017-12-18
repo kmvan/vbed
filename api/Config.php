@@ -10,7 +10,7 @@ const APP_NAME_EN = 'V-Bed';
 const URL = 'https://vbed.inn-studio.com/';
 
 // your app version
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 
 // your app api url (for upload image and oauth)
 const API_URL = 'https://api.inn-studio.com/vbed/';
